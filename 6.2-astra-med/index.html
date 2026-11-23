@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake • Pomar</title>
+  <link rel="stylesheet" href="screen.css">
+  <script defer src="rules.js"></script>
+  <script defer src="play.js"></script>
+</head>
+<body>
+  <main>
+    <header><h1>Snake<span> / Pomar</span></h1><p>Pontos <strong id="points">0</strong></p></header>
+    <section class="frame" aria-label="Campo do jogo">
+      <div id="field" role="img" aria-label="Cobra e maçã em um campo quadriculado"></div>
+      <div id="cover"><article>
+        <h2 id="title" role="status">Hora da colheita</h2>
+        <p id="caption">Pegue as maçãs e evite as cercas e o próprio corpo.</p>
+        <button id="start">Começar partida</button>
+      </article></div>
+    </section>
+    <footer><p>Use as setas ou WASD para virar.</p>
+      <nav aria-label="Mover a cobra">
+        <button data-turn="west" aria-label="Esquerda">←</button>
+        <button data-turn="north" aria-label="Cima">↑</button>
+        <button data-turn="south" aria-label="Baixo">↓</button>
+        <button data-turn="east" aria-label="Direita">→</button>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>

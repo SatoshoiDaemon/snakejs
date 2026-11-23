@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101412">
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main class="cabinet">
+    <header>
+      <p class="subtitle">JOGO DA COBRINHA</p>
+      <h1>Snake<span>.</span></h1>
+    </header>
+
+    <div class="game">
+      <section class="playfield" aria-label="Área de jogo">
+        <canvas id="board" width="440" height="440" role="img" aria-label="Tabuleiro de Snake, 20 por 20 casas"></canvas>
+        <div class="overlay" id="overlay">
+          <div>
+            <h2 id="message-title">Pronto para jogar?</h2>
+            <p id="message-detail">Coma, cresça e desvie das paredes.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel" aria-label="Placar e controles">
+        <dl class="scores">
+          <div>
+            <dt>Pontos</dt>
+            <dd id="score">00</dd>
+          </div>
+          <div>
+            <dt>Recorde</dt>
+            <dd id="best">00</dd>
+          </div>
+        </dl>
+
+        <p class="status"><span aria-hidden="true"></span><span id="status" role="status">Aguardando partida</span></p>
+
+        <button class="action" type="button" id="action">Jogar</button>
+
+        <div class="directions" aria-label="Controles de direção">
+          <button type="button" data-direction="up" aria-label="Mover para cima">↑</button>
+          <button type="button" data-direction="left" aria-label="Mover para a esquerda">←</button>
+          <button type="button" data-direction="down" aria-label="Mover para baixo">↓</button>
+          <button type="button" data-direction="right" aria-label="Mover para a direita">→</button>
+        </div>
+
+        <p class="keyboard"><kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> ou <kbd>WASD</kbd> para mover. <kbd>Espaço</kbd> para jogar ou pausar.</p>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
